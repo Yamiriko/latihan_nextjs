@@ -1,0 +1,65 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  background-color: #e9ecef;
+}
+
+body {
+  background: linear-gradient(135deg, #c2e9fb, #a1c4fd, #cfd9df);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #1f2937;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.main-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.title {
+  color: #006d77;
+}
+.subtitle {
+  font-size: 1.1rem;
+}
+.icon {
+  width: 20px;
+  margin-right: 8px;
+}
+.section-title {
+  background-color: #004e64;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}
+#profile-img {
+  width: 120px;
+  transition: transform 0.5s ease-in-out;
+}

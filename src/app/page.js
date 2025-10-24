@@ -1,95 +1,120 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+import "./style_riko.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="row">
+        <div className="col-md-12 grid-margin">
+          <div className="row">
+            <div className="col-12 col-xl-8 mb-4 mb-xl-0">
+              <h3 className="font-weight-bold">Welcome John</h3>
+              <h6 className="font-weight-normal mb-0">
+                All systems are running smoothly! You have
+                <span className="text-primary">3 unread alerts!</span>
+              </h6>
+            </div>
+            <div className="col-12 col-xl-4">
+              <div className="justify-content-end d-flex">
+                <div className="dropdown flex-md-grow-1 flex-xl-grow-0">
+                  <button
+                    className="btn btn-sm btn-light bg-white dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuDate2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    <i className="mdi mdi-calendar"></i> Today (10 Jan 2021)
+                  </button>
+                  <div
+                    className="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="dropdownMenuDate2"
+                  >
+                    <a className="dropdown-item" href="#">
+                      January - March
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      March - June
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      June - August
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      August - November
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6 grid-margin stretch-card">
+          <div className="card tale-bg">
+            <div className="card-people mt-auto">
+              <img src="assets/images/dashboard/people.svg" alt="people" />
+              <div className="weather-info">
+                <div className="d-flex">
+                  <div>
+                    <h2 className="mb-0 font-weight-normal">
+                      <i className="icon-sun me-2"></i>31<sup>C</sup>
+                    </h2>
+                  </div>
+                  <div className="ms-2">
+                    <h4 className="location font-weight-normal">Chicago</h4>
+                    <h6 className="font-weight-normal">Illinois</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 grid-margin transparent">
+          <div className="row">
+            <div className="col-md-6 mb-4 stretch-card transparent">
+              <div className="card card-tale">
+                <div className="card-body">
+                  <p className="mb-4">Todays Bookings</p>
+                  <p className="fs-30 mb-2">4006</p>
+                  <p>10.00% (30 days)</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 mb-4 stretch-card transparent">
+              <div className="card card-dark-blue">
+                <div className="card-body">
+                  <p className="mb-4">Total Bookings</p>
+                  <p className="fs-30 mb-2">61344</p>
+                  <p>22.00% (30 days)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+              <div className="card card-light-blue">
+                <div className="card-body">
+                  <p className="mb-4">Number of Meetings</p>
+                  <p className="fs-30 mb-2">34040</p>
+                  <p>2.00% (30 days)</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 stretch-card transparent">
+              <div className="card card-light-danger">
+                <div className="card-body">
+                  <p className="mb-4">Number of Clients</p>
+                  <p className="fs-30 mb-2">47033</p>
+                  <p>0.22% (30 days)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
