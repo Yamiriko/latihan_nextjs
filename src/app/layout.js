@@ -43,7 +43,20 @@ export default function RootLayout({ children }) {
   } else {
     return (
       <html lang="id">
-        <body>{children}</body>
+        <Kepala />
+        <body>
+          <div className="container-scroller">
+            <HeaderSection />
+            <div className="container-fluid page-body-wrapper">
+              <Menu />
+              <div className="main-panel">
+                <div className="content-wrapper">{children}</div>
+                <FooterSection />
+              </div>
+            </div>
+          </div>
+          <Kaki />
+        </body>
       </html>
     );
   }
